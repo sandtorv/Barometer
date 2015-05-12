@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Barometer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0cw-Rk-uAM">
+                                <rect key="frame" x="200" y="150" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BFq-HP-HHQ"/>
+                                    <constraint firstAttribute="height" constant="200" id="XUd-iD-aNm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SP-Cy-Uo9">
+                                <rect key="frame" x="0.0" y="358" width="600" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aeG-Gp-AO8"/>
+                                    <constraint firstAttribute="width" constant="186" id="f10-y8-Smo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="f10-y8-Smo"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUZ-gw-OCJ">
+                                <rect key="frame" x="0.0" y="320" width="600" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="5vN-wt-BXC"/>
+                                    <constraint firstAttribute="height" constant="40" id="LAe-De-8w3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5vN-wt-BXC"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5SP-Cy-Uo9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="4Vb-ls-8BZ"/>
+                            <constraint firstAttribute="centerX" secondItem="0cw-Rk-uAM" secondAttribute="centerX" id="6nl-gM-JfL"/>
+                            <constraint firstAttribute="centerX" secondItem="5SP-Cy-Uo9" secondAttribute="centerX" id="A9c-Lz-YaK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HUZ-gw-OCJ" secondAttribute="bottom" constant="8" id="GTe-lU-von"/>
+                            <constraint firstItem="HUZ-gw-OCJ" firstAttribute="top" secondItem="0cw-Rk-uAM" secondAttribute="bottom" constant="-30" id="HKp-zh-8Rd"/>
+                            <constraint firstAttribute="width" secondItem="HUZ-gw-OCJ" secondAttribute="width" id="PdP-r7-hDg"/>
+                            <constraint firstAttribute="centerY" secondItem="0cw-Rk-uAM" secondAttribute="centerY" constant="50" id="T8M-rb-AZc"/>
+                            <constraint firstAttribute="centerY" secondItem="HUZ-gw-OCJ" secondAttribute="centerY" constant="-40" id="VMx-wA-Wz9"/>
+                            <constraint firstAttribute="centerX" secondItem="HUZ-gw-OCJ" secondAttribute="centerX" id="Vnc-ia-QMh"/>
+                            <constraint firstAttribute="centerY" secondItem="5SP-Cy-Uo9" secondAttribute="centerY" constant="-78" id="a5d-P8-Y8Y"/>
+                            <constraint firstItem="0cw-Rk-uAM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="ulY-HL-Apj"/>
+                            <constraint firstItem="5SP-Cy-Uo9" firstAttribute="top" secondItem="HUZ-gw-OCJ" secondAttribute="bottom" constant="-2" id="vvx-pZ-TEj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ulY-HL-Apj"/>
+                                <exclude reference="HKp-zh-8Rd"/>
+                                <exclude reference="vvx-pZ-TEj"/>
+                                <exclude reference="GTe-lU-von"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="5SP-Cy-Uo9" id="ATs-sc-ZLU"/>
+                        <outlet property="iconView" destination="0cw-Rk-uAM" id="dsd-Jm-za8"/>
+                        <outlet property="pressureLabel" destination="HUZ-gw-OCJ" id="rBe-GH-xcZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="304"/>
+        </scene>
+    </scenes>
+</document>

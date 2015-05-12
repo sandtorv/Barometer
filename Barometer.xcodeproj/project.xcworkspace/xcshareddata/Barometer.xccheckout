@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>070545ED-EEA9-481A-9ED4-6027F8A69AC2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Barometer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ECAC666E21EFBAF4BDF1CBF46B700C76C9B7D7FC</key>
+		<string>https://bitbucket.org/sandtorv/barometer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Barometer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ECAC666E21EFBAF4BDF1CBF46B700C76C9B7D7FC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/sandtorv/barometer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ECAC666E21EFBAF4BDF1CBF46B700C76C9B7D7FC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ECAC666E21EFBAF4BDF1CBF46B700C76C9B7D7FC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>barometer</string>
+		</dict>
+	</array>
+</dict>
+</plist>
