@@ -59,11 +59,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ADBannerViewD
         
         // Get last value and add text, and the last icon
         if(self.userDefault.objectForKey("oldResult") != nil){
-            var oldResult: Int = self.userDefault.objectForKey("oldResult") as Int
+            var oldResult: Int = self.userDefault.objectForKey("oldResult") as! Int
             self.pressureLabel.text = String(oldResult) + " kPa"
         }
         if(self.userDefault.objectForKey("oldIcon") != nil){
-            var oldIcon: String = self.userDefault.objectForKey("oldIcon") as String
+            var oldIcon: String = self.userDefault.objectForKey("oldIcon") as! String
             self.animateIcon(oldIcon)
         }
         
@@ -80,9 +80,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ADBannerViewD
                 {
                     dispatch_async(dispatch_get_main_queue()) {
                         println("Height is: \(self.heightHolder)")
-                        let result = (data.pressure as Float * 10.00) + (((self.heightHolder as NSString).floatValue) / 8)
+                        // Formula: kPa + height/100 or kPa + 10 kPa/1000m
+                        let result = (data.pressure as Float * 10.00) + (((self.heightHolder as NSString).floatValue) / 100)
                         // Set .1f, .2f, etc for decimals.
-                        self.pressureLabel.text = NSString(format:"%.0f kPa", result)
+                        self.pressureLabel.text = NSString(format:"%.0f kPa", result) as? String
                         
                         // Change icon view based on pressure
                         if(result >= 1045){
@@ -163,8 +164,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, ADBannerViewD
     func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
         var alt = newLocation.altitude
         var acc = newLocation.verticalAccuracy
-        self.heightLabel.text =  NSString(format:"Altitude: %.0f m", alt) + " ± " + NSString(format:"%.0f m", acc)
-        heightHolder = NSString(format:"%.0f", alt)
+        self.heightLabel.text =  NSString(format:"Altitude: %.0f m ± %.0f", alt, acc) as? String
+        heightHolder = NSString(format:"%.0f", alt) as! String
     }
 }
 
